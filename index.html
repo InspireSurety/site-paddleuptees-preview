@@ -5,191 +5,342 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pickleball shirts, performance tees and hats | PaddleUp Tees</title>
   <meta name="description" content="Made-to-order pickleball shirts, moisture-wicking performance tees and embroidered caps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/site-paddleuptees-preview/css/site.css">
   <link rel="icon" href="/site-paddleuptees-preview/brand/paddleuptees-icon.png">
 </head>
 <body data-base="/site-paddleuptees-preview/">
+
   <header class="site-header">
     <p class="promo">Made to order · Free shipping over $75</p>
     <div class="bar">
-      <a class="logo" href="/site-paddleuptees-preview/"><img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees"></a>
-      <nav>
+      <button type="button" class="icon-btn menu-btn" data-menu-open aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <a class="logo" href="/site-paddleuptees-preview/" aria-label="PaddleUp home">
+        <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees" width="212" height="40">
+      </a>
+      <nav aria-label="Main">
         <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance</a>
         <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton</a>
         <a href="/site-paddleuptees-preview/pickleball-hats/">Hats</a>
         <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
         <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
       </nav>
-      <button type="button" class="cart-btn" data-cart-open>Cart <span data-cart-count>0</span></button>
+      <div class="bar-end">
+        <a class="icon-btn" href="/site-paddleuptees-preview/pickleball-shirts/" aria-label="Browse all designs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </a>
+        <button type="button" class="icon-btn" data-cart-open aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" data-cart-count>0</span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <div class="mobile-menu" hidden data-menu>
+    <div class="mobile-menu-panel">
+      <a class="logo" href="/site-paddleuptees-preview/"><img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees" height="40"></a>
+      <nav aria-label="Mobile">
+        <a href="/site-paddleuptees-preview/pickleball-shirts/">All shirts</a>
+        <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance</a>
+        <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton</a>
+        <a href="/site-paddleuptees-preview/pickleball-hats/">Hats</a>
+        <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
+        <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
+        <a href="/site-paddleuptees-preview/seasonal/">Seasonal</a>
+      </nav>
+    </div>
+  </div>
+
   <main>
+
+
+
 <section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Printed after you order</p>
-    <h1>Sun on your<br><span>shoulders.</span></h1>
-    <p class="lede">Pickleball shirts, performance tees and embroidered caps for clubs and everyday play. Printed or stitched only after you order.</p>
-    <div class="actions">
-      <a class="btn btn-court" href="/site-paddleuptees-preview/pickleball-shirts/performance/">Shop performance</a>
-      <a class="btn btn-ghost" href="/site-paddleuptees-preview/clubs/">Find your club</a>
+  <div class="hero-sun" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        Printed after you order
+      </p>
+      <h1>Sun on your<br><span class="accent">shoulders.</span></h1>
+      <p class="lede">Pickleball shirts, performance tees and embroidered caps for clubs and everyday play — printed or stitched only after you order.</p>
+      <div class="actions">
+        <a class="btn btn-court" href="/site-paddleuptees-preview/pickleball-shirts/performance/">
+          Shop performance
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="/site-paddleuptees-preview/clubs/">Find your club</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>Ship</dt><dd>Free over $75</dd></div>
+        <div><dt>Fits</dt><dd>Men's &amp; women's</dd></div>
+        <div><dt>Min</dt><dd>None</dd></div>
+      </dl>
+    </div>
+    <div>
+      <div class="court-stage" aria-hidden="true">
+        <div class="sky"></div><div class="sun"></div>
+        <div class="floor"></div>
+        <div class="box"></div><div class="hline"></div><div class="vline"></div>
+        <div class="float f1"><svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PaddleUp Original on a short"><defs><linearGradient id="m1-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#121212"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1a1a1a" stroke="#131313" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131313" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131313" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m1-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PADDLE UP</text><polygon points="8,118 292,118 284,126 16,126" fill="#C6FF2E"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg></div>
+        <div class="float f2"><svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PaddleUp Original on a short"><defs><linearGradient id="m2-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#166135"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1f8a4c" stroke="#166337" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#166337" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#166337" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m2-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PADDLE UP</text><polygon points="8,118 292,118 284,126 16,126" fill="#C6FF2E"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg></div>
+        <div class="float f3"><svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PaddleUp Original on a cap"><defs><linearGradient id="m3-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="286" rx="120" ry="8" fill="#000" opacity="0.08"/><path d="M70 205 C66 95 128 42 200 42 C272 42 334 95 330 205 Q200 234 70 205 Z" fill="#f5f4ee" stroke="#b0b0ab" stroke-width="3" stroke-linejoin="round"/><path d="M200 44 L200 224" stroke="#b0b0ab" stroke-width="2" fill="none" opacity="0.5"/><path d="M146 56 Q126 130 134 218 M254 56 Q274 130 266 218" stroke="#b0b0ab" stroke-width="2" fill="none" opacity="0.35"/><circle cx="200" cy="44" r="8" fill="#c4c3be" stroke="#b0b0ab" stroke-width="2"/><path d="M70 205 C66 95 128 42 200 42 C272 42 334 95 330 205 Q200 234 70 205 Z" fill="url(#m3-shine)"/><path d="M100 212 Q200 240 300 212 Q318 252 264 270 Q200 284 136 270 Q82 252 100 212 Z" fill="#cecdc8" stroke="#b0b0ab" stroke-width="3" stroke-linejoin="round"/><path d="M112 226 Q200 252 288 226" stroke="#b0b0ab" stroke-width="2" fill="none" opacity="0.45"/><svg x="144" y="98" width="112" height="74.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#10231A" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PADDLE UP</text><polygon points="8,118 292,118 284,126 16,126" fill="#536b13"/><text x="150" y="166" fill="#10231A" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg></div>
+      </div>
+      <p class="stage-note">Preview mockups · <a href="/site-paddleuptees-preview/pickleball-shirts/paddleup-original/">Shop PaddleUp Original</a></p>
     </div>
   </div>
 </section>
-<div class="marquee"><p class="wrap">Dink · Drive · Drop · Repeat · Paddle Up · Third shot drop</p></div>
+
+
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Dink</span><span>Drive</span><span>Drop</span><span>Repeat</span><span>Paddle Up</span><span>Third shot drop</span><span>Stay out of the kitchen</span><span>Dink</span><span>Drive</span><span>Drop</span><span>Repeat</span><span>Paddle Up</span><span>Third shot drop</span><span>Stay out of the kitchen</span><span>Dink</span><span>Drive</span><span>Drop</span><span>Repeat</span><span>Paddle Up</span><span>Third shot drop</span><span>Stay out of the kitchen</span><span>Dink</span><span>Drive</span><span>Drop</span><span>Repeat</span><span>Paddle Up</span><span>Third shot drop</span><span>Stay out of the kitchen</span>
+  </div>
+</div>
+
+
 <section class="section">
   <div class="wrap">
     <p class="eyebrow">Shop by type</p>
-    <h2>Built for the court. Comfortable off it.</h2>
+    <h2 class="section-head">Built for the court.<br>Comfortable off it.</h2>
     <div class="grid grid-3">
-      <a class="tile tile-perf" href="/site-paddleuptees-preview/pickleball-shirts/performance/"><h3>Performance</h3><p>Moisture-wicking polyester for long rallies.</p></a>
-      <a class="tile tile-cotton" href="/site-paddleuptees-preview/pickleball-shirts/cotton/"><h3>Cotton</h3><p>Soft tees for coffee runs and cooldowns.</p></a>
-      <a class="tile tile-hat" href="/site-paddleuptees-preview/pickleball-hats/"><h3>Hats</h3><p>Embroidered caps that survive the season.</p></a>
+      <a class="tile tile-perf" href="/site-paddleuptees-preview/pickleball-shirts/performance/">
+        <h3>Performance</h3>
+        <p>Moisture-wicking polyester for long rallies.</p>
+      </a>
+      <a class="tile tile-cotton" href="/site-paddleuptees-preview/pickleball-shirts/cotton/">
+        <h3>Cotton</h3>
+        <p>Soft tees for coffee runs and cooldowns.</p>
+      </a>
+      <a class="tile tile-hat" href="/site-paddleuptees-preview/pickleball-hats/">
+        <h3>Hats</h3>
+        <p>Embroidered caps that survive the season.</p>
+      </a>
     </div>
   </div>
 </section>
-<section class="section">
+
+
+<section class="section" style="background: color-mix(in srgb, var(--sky) 8%, var(--paper));">
   <div class="wrap">
     <p class="eyebrow">Fresh designs</p>
-    <h2>Players are wearing these</h2>
+    <h2 class="section-head">Players are wearing these</h2>
     <div class="grid grid-3">
       
         
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/paddleup-original/">
-  <div class="swatch" style="background: #C6FF2E; color: white">
-    <strong>PADDLE UP<br>PICKLEBALL CLUB</strong>
-  </div>
   
-  <h3>PaddleUp Original</h3>
-  <p>The one that started the club.</p>
-  <p class="price">From $22</p>
-</a>
-
-      
-        
-
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/dink-responsibly/">
-  <div class="swatch" style="background: #C6FF2E; color: white">
-    <strong>DINK<br>RESPONSIBLY</strong>
-  </div>
   
-  <h3>Dink Responsibly</h3>
-  <p>Soft hands. Loud opinions.</p>
-  <p class="price">From $22</p>
-</a>
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/paddleup-original/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PaddleUp Original on a short"><defs><linearGradient id="m4-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#121220"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1a1a2e" stroke="#131321" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131321" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131321" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m4-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PADDLE UP</text><polygon points="8,118 292,118 284,126 16,126" fill="#C6FF2E"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      
+      <h3>PaddleUp Original</h3>
+      <p>The one that started the club.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
       
         
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/third-shot-drop/">
-  <div class="swatch" style="background: #DDF53B; color: white">
-    <strong>THIRD SHOT<br>DROP</strong>
-  </div>
   
-  <h3>Third Shot Drop</h3>
-  <p>Patience wins points.</p>
-  <p class="price">From $22</p>
-</a>
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/dink-responsibly/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dink Responsibly on a short"><defs><linearGradient id="m5-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#131d34"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1b2a4a" stroke="#131e35" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131e35" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131e35" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m5-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="92" textLength="184" lengthAdjust="spacingAndGlyphs" text-anchor="middle">DINK</text><polygon points="58,118 242,118 234,126 66,126" fill="#C6FF2E"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="143" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">RESPONSIBLY</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      
+      <h3>Dink Responsibly</h3>
+      <p>Soft hands. Loud opinions.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
       
         
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-court-club/">
-  <div class="swatch" style="background: #6FB1E0; color: white">
-    <strong>PENSACOLA<br>PICKLEBALL CLUB</strong>
-  </div>
-  <p class="eyebrow">Pensacola Pickleball</p>
-  <h3>Pensacola Court Club</h3>
-  <p>Gulf Coast pickleball, made to order.</p>
-  <p class="price">From $22</p>
-</a>
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/third-shot-drop/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Third Shot Drop on a short"><defs><linearGradient id="m6-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#164b30"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1f6b45" stroke="#164d32" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#164d32" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#164d32" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m6-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><circle cx="62" cy="100" r="50" fill="none" stroke="#DDF53B" stroke-width="7"/><circle cx="62" cy="72.5" r="5.5" fill="#DDF53B"/><circle cx="87" cy="90" r="5.5" fill="#DDF53B"/><circle cx="37" cy="90" r="5.5" fill="#DDF53B"/><circle cx="77" cy="122.5" r="5.5" fill="#DDF53B"/><circle cx="47" cy="122.5" r="5.5" fill="#DDF53B"/><circle cx="62" cy="102.5" r="5.5" fill="#DDF53B"/><text x="126" y="98" fill="#F7F8F2" font-size="33.6" textLength="168" lengthAdjust="spacingAndGlyphs" >THIRD SHOT</text><rect x="126" y="110" width="168" height="5" fill="#DDF53B"/><text x="126" y="156" fill="#F7F8F2" font-size="44" textLength="88" lengthAdjust="spacingAndGlyphs" >DROP</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      
+      <h3>Third Shot Drop</h3>
+      <p>Patience wins points.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
       
         
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/lwr-paddle-crew/">
-  <div class="swatch" style="background: #C6FF2E; color: white">
-    <strong>LWR<br>PICKLEBALL</strong>
-  </div>
-  <p class="eyebrow">LWR Pickleball</p>
-  <h3>LWR Paddle Crew</h3>
-  <p>Lakewood Ranch, all day.</p>
-  <p class="price">From $22</p>
-</a>
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-court-club/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pensacola Court Club on a short"><defs><linearGradient id="m7-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#131d34"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1b2a4a" stroke="#131e35" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131e35" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131e35" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m7-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PENSACOLA</text><polygon points="8,118 292,118 284,126 16,126" fill="#6FB1E0"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      <p class="card-eyebrow">Pensacola Pickleball</p>
+      <h3>Pensacola Court Club</h3>
+      <p>Gulf Coast pickleball, made to order.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
       
         
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/newport-beach-paddle-club/">
-  <div class="swatch" style="background: #6FB1E0; color: #14241c">
-    <strong>NEWPORT BEACH<br>PADDLE CLUB</strong>
-  </div>
-  <p class="eyebrow">Newport Beach Pickleball</p>
-  <h3>Newport Beach Paddle Club</h3>
-  <p>Sunrise sessions, salt in the air.</p>
-  <p class="price">From $22</p>
-</a>
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/lwr-paddle-crew/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LWR Paddle Crew on a short"><defs><linearGradient id="m8-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#164b30"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1f6b45" stroke="#164d32" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#164d32" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#164d32" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m8-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><g transform="translate(120 58) rotate(-28)"><rect x="-6" y="30" width="12" height="34" rx="5" fill="#F7F8F2"/><ellipse cx="0" cy="0" rx="30" ry="38" fill="#F7F8F2"/><ellipse cx="0" cy="0" rx="22" ry="30" fill="none" stroke="#C6FF2E" stroke-width="3"/></g><g transform="translate(180 58) rotate(28) scale(-1 1)"><rect x="-6" y="30" width="12" height="34" rx="5" fill="#F7F8F2"/><ellipse cx="0" cy="0" rx="30" ry="38" fill="#F7F8F2"/><ellipse cx="0" cy="0" rx="22" ry="30" fill="none" stroke="#C6FF2E" stroke-width="3"/></g><circle cx="150" cy="42" r="14" fill="none" stroke="#C6FF2E" stroke-width="1.96"/><circle cx="150" cy="34.3" r="1.54" fill="#C6FF2E"/><circle cx="157" cy="39.2" r="1.54" fill="#C6FF2E"/><circle cx="143" cy="39.2" r="1.54" fill="#C6FF2E"/><circle cx="154.2" cy="48.3" r="1.54" fill="#C6FF2E"/><circle cx="145.8" cy="48.3" r="1.54" fill="#C6FF2E"/><circle cx="150" cy="42.7" r="1.54" fill="#C6FF2E"/><text x="150" y="142" fill="#F7F8F2" font-size="64" textLength="96" lengthAdjust="spacingAndGlyphs" text-anchor="middle">LWR</text><text x="150" y="176" fill="#C6FF2E" font-size="17" textLength="85" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PICKLEBALL</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      <p class="card-eyebrow">LWR Pickleball</p>
+      <h3>LWR Paddle Crew</h3>
+      <p>Lakewood Ranch, all day.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
+
+      
+        
+
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/newport-beach-paddle-club/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Newport Beach Paddle Club on a short"><defs><linearGradient id="m9-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#acaba7"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#f5f4ee" stroke="#b0b0ab" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#b0b0ab" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#b0b0ab" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m9-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><path d="M10 0 q 18 -14 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0" transform="translate(0 28)" fill="none" stroke="#2f4a5e" stroke-width="5" stroke-linecap="round"/><path d="M10 0 q 18 -14 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0" transform="translate(0 46)" fill="none" stroke="#10231A" stroke-width="5" stroke-linecap="round"/><text x="150" y="118" fill="#10231A" font-size="43.08" textLength="280" lengthAdjust="spacingAndGlyphs" text-anchor="middle">NEWPORT BEACH</text><text x="150" y="160" fill="#2f4a5e" font-size="22" textLength="121" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="4">PADDLE CLUB</text><path d="M10 0 q 18 -14 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0 t 36 0" transform="translate(0 182)" fill="none" stroke="#2f4a5e" stroke-width="4" stroke-linecap="round"/></g></svg></svg>
+    </div>
+    <div class="card-body">
+      <p class="card-eyebrow">Newport Beach Pickleball</p>
+      <h3>Newport Beach Paddle Club</h3>
+      <p>Sunrise sessions, salt in the air.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
       
     </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a class="btn btn-court" href="/site-paddleuptees-preview/pickleball-shirts/performance/">See all shirts</a>
+    </div>
   </div>
 </section>
+
+
 <section class="section">
   <div class="wrap">
     <p class="eyebrow">Club shops</p>
-    <h2>Shop your club</h2>
+    <h2 class="section-head">Shop your club</h2>
     <div class="grid grid-3">
       
         <a class="club-card" href="/site-paddleuptees-preview/clubs/pensacola-pickleball/">
-          <p class="eyebrow">Pensacola, FL</p>
+          <p class="card-eyebrow">Pensacola, FL</p>
           <h2>Pensacola Pickleball</h2>
           <p>2 designs</p>
         </a>
       
         <a class="club-card" href="/site-paddleuptees-preview/clubs/lakewood-ranch-pickleball/">
-          <p class="eyebrow">Lakewood Ranch, FL</p>
+          <p class="card-eyebrow">Lakewood Ranch, FL</p>
           <h2>LWR Pickleball</h2>
           <p>2 designs</p>
         </a>
       
         <a class="club-card" href="/site-paddleuptees-preview/clubs/azario-pickleball/">
-          <p class="eyebrow">Lakewood Ranch, FL</p>
+          <p class="card-eyebrow">Lakewood Ranch, FL</p>
           <h2>Azario Pickleball</h2>
           <p>2 designs</p>
         </a>
       
         <a class="club-card" href="/site-paddleuptees-preview/clubs/newport-beach-pickleball/">
-          <p class="eyebrow">Newport Beach, CA</p>
+          <p class="card-eyebrow">Newport Beach, CA</p>
           <h2>Newport Beach Pickleball</h2>
           <p>2 designs</p>
         </a>
       
         <a class="club-card" href="/site-paddleuptees-preview/clubs/wellen-park-pickleball/">
-          <p class="eyebrow">Wellen Park, FL</p>
+          <p class="card-eyebrow">Wellen Park, FL</p>
           <h2>Wellen Park Pickleball</h2>
           <p>1 design</p>
         </a>
       
     </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a class="btn btn-ghost" href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club &rarr;</a>
+    </div>
   </div>
 </section>
 </main>
+
   <footer class="site-footer">
-    <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="">
-    <p>Pickleball shirts, performance tees and caps. Printed or embroidered after you order.</p>
-    <p><a href="mailto:hello@paddleuptees.com">hello@paddleuptees.com</a></p>
-    <p>Built with Eleventy 2. Orders go to Fulfill Engine when checkout is connected.</p>
+    <div class="wrap">
+      <div>
+        <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees">
+        <p>Pickleball shirts, performance tees and embroidered caps.<br>Printed or stitched only after you order.</p>
+        <p><a href="mailto:hello@paddleuptees.com">hello@paddleuptees.com</a></p>
+        <p class="footer-badge">Powered by Eleventy &amp; Fulfill Engine</p>
+      </div>
+      <div>
+        <nav class="footer-links">
+          <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance shirts</a>
+          <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton tees</a>
+          <a href="/site-paddleuptees-preview/pickleball-hats/">Hats &amp; caps</a>
+          <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
+          <a href="/site-paddleuptees-preview/seasonal/">Seasonal</a>
+          <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
+        </nav>
+      </div>
+    </div>
   </footer>
+
   <aside class="cart-drawer" hidden data-cart-drawer>
     <div class="cart-panel">
+      <button type="button" class="cart-close-btn" data-cart-close aria-label="Close cart">&#x2715;</button>
       <h2>Your cart</h2>
-      <p data-cart-empty>Nothing here yet.</p>
+      <p data-cart-empty style="color: #666; font-size: 0.9rem;">Nothing here yet — go find a design you love.</p>
       <ul data-cart-lines></ul>
-      <p class="price">Subtotal <span data-cart-subtotal>$0</span></p>
-      <p>Saved in this browser. No server required.</p>
-      <button type="button" data-cart-close>Close</button>
+      <p class="cart-subtotal">Subtotal: <span data-cart-subtotal>$0.00</span></p>
+      <p style="font-size:0.8rem;opacity:0.6;margin:0">Saved in this browser. No server required.</p>
+      <button type="button" class="cart-checkout" data-checkout>Proceed to checkout</button>
+      <p class="checkout-note" data-checkout-note hidden>Preview site: checkout connects to Fulfill Engine at launch. Your cart is saved in this browser.</p>
     </div>
   </aside>
+
+  <script src="/site-paddleuptees-preview/js/mockup.js"></script>
   <script src="/site-paddleuptees-preview/js/cart.js"></script>
+  <script src="/site-paddleuptees-preview/js/product.js"></script>
 </body>
 </html>

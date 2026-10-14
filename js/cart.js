@@ -22,7 +22,7 @@
     var lines = read();
     var count = lines.reduce(function (n, l) { return n + l.qty; }, 0);
     var sub = lines.reduce(function (n, l) { return n + l.qty * l.price; }, 0);
-    document.querySelectorAll("[data-cart-count]").forEach(function (el) { el.textContent = String(count); });
+    document.querySelectorAll("[data-cart-count]").forEach(function (el) { el.textContent = String(count); el.classList.toggle("has-items", count > 0); });
     var subEl = document.querySelector("[data-cart-subtotal]");
     if (subEl) subEl.textContent = money(sub);
     var empty = document.querySelector("[data-cart-empty]");
@@ -61,6 +61,12 @@
     var addBtn = event.target.closest("[data-add]");
     if (open) document.querySelector("[data-cart-drawer]").hidden = false;
     if (close || event.target.matches("[data-cart-drawer]")) document.querySelector("[data-cart-drawer]").hidden = true;
+    if (event.target.closest("[data-checkout]")) document.querySelector("[data-checkout-note]").hidden = false;
+    var menu = document.querySelector("[data-menu]");
+    if (menu) {
+      if (event.target.closest("[data-menu-open]")) menu.hidden = false;
+      if (event.target.closest("[data-menu-close]") || event.target === menu || event.target.closest("[data-menu] nav a")) menu.hidden = true;
+    }
     if (!addBtn) return;
     var root = addBtn.closest("[data-product]") || document;
     var kind = (root.querySelector("[data-kind]:checked") || {}).value || addBtn.dataset.kind;

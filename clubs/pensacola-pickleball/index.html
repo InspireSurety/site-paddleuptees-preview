@@ -5,24 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ club.name }} | PaddleUp Tees</title>
   <meta name="description" content="Made-to-order pickleball shirts, performance tees and caps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/site-paddleuptees-preview/css/site.css">
   <link rel="icon" href="/site-paddleuptees-preview/brand/paddleuptees-icon.png">
 </head>
 <body data-base="/site-paddleuptees-preview/">
+
   <header class="site-header">
     <p class="promo">Made to order · Free shipping over $75</p>
     <div class="bar">
-      <a class="logo" href="/site-paddleuptees-preview/"><img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees"></a>
-      <nav>
+      <button type="button" class="icon-btn menu-btn" data-menu-open aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <a class="logo" href="/site-paddleuptees-preview/" aria-label="PaddleUp home">
+        <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees" width="212" height="40">
+      </a>
+      <nav aria-label="Main">
         <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance</a>
         <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton</a>
         <a href="/site-paddleuptees-preview/pickleball-hats/">Hats</a>
         <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
         <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
       </nav>
-      <button type="button" class="cart-btn" data-cart-open>Cart <span data-cart-count>0</span></button>
+      <div class="bar-end">
+        <a class="icon-btn" href="/site-paddleuptees-preview/pickleball-shirts/" aria-label="Browse all designs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </a>
+        <button type="button" class="icon-btn" data-cart-open aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" data-cart-count>0</span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <div class="mobile-menu" hidden data-menu>
+    <div class="mobile-menu-panel">
+      <a class="logo" href="/site-paddleuptees-preview/"><img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees" height="40"></a>
+      <nav aria-label="Mobile">
+        <a href="/site-paddleuptees-preview/pickleball-shirts/">All shirts</a>
+        <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance</a>
+        <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton</a>
+        <a href="/site-paddleuptees-preview/pickleball-hats/">Hats</a>
+        <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
+        <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
+        <a href="/site-paddleuptees-preview/seasonal/">Seasonal</a>
+      </nav>
+    </div>
+  </div>
+
   <main>
 <header class="page-head"><div class="wrap">
   <p class="eyebrow">Pensacola, FL</p>
@@ -32,45 +64,80 @@
 <section class="section"><div class="wrap grid grid-3">
   
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-court-club/">
-  <div class="swatch" style="background: #6FB1E0; color: white">
-    <strong>PENSACOLA<br>PICKLEBALL CLUB</strong>
-  </div>
-  <p class="eyebrow">Pensacola Pickleball</p>
-  <h3>Pensacola Court Club</h3>
-  <p>Gulf Coast pickleball, made to order.</p>
-  <p class="price">From $22</p>
-</a>
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-court-club/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pensacola Court Club on a short"><defs><linearGradient id="m14-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#131d34"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1b2a4a" stroke="#131e35" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131e35" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131e35" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m14-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><text x="150" y="104" fill="#F7F8F2" font-size="63.11" textLength="284" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PENSACOLA</text><polygon points="8,118 292,118 284,126 16,126" fill="#6FB1E0"/><text x="150" y="166" fill="#F7F8F2" font-size="26" textLength="195" lengthAdjust="spacingAndGlyphs" text-anchor="middle" letter-spacing="3">PICKLEBALL CLUB</text></g></svg></svg>
+    </div>
+    <div class="card-body">
+      <p class="card-eyebrow">Pensacola Pickleball</p>
+      <h3>Pensacola Court Club</h3>
+      <p>Gulf Coast pickleball, made to order.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
 
-<a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-dink-society/">
-  <div class="swatch" style="background: #6FB1E0; color: white">
-    <strong>DINK SOCIETY<br>PENSACOLA</strong>
-  </div>
-  <p class="eyebrow">Pensacola Pickleball</p>
-  <h3>Pensacola Dink Society</h3>
-  <p>Dink first. Ask questions later.</p>
-  <p class="price">From $22</p>
-</a>
+  
+  
+
+<div class="card-wrap">
+  <a class="card" href="/site-paddleuptees-preview/pickleball-shirts/pensacola-dink-society/">
+    <div class="card-mockup">
+      <svg viewBox="0 0 400 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pensacola Dink Society on a short"><defs><linearGradient id="m15-shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.16"/></linearGradient></defs><ellipse cx="200" cy="420" rx="130" ry="8" fill="#000" opacity="0.08"/><path d="M140 34 Q200 6 260 34 Q200 84 140 34 Z" fill="#121220"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="#1a1a2e" stroke="#131321" stroke-width="3" stroke-linejoin="round"/><path d="M138 34 Q200 84 262 34" fill="none" stroke="#131321" stroke-width="8" stroke-linecap="round"/><path d="M92 150 L92 398 M308 150 L308 398" stroke="#131321" stroke-width="1.5" opacity="0.35" fill="none"/><path d="M138 34 L58 66 L8 156 L72 190 L92 150 L92 398 Q92 408 102 408 L298 408 Q308 408 308 398 L308 150 L328 190 L392 156 L342 66 L262 34 Q200 84 138 34 Z" fill="url(#m15-shine)"/><svg x="120" y="108" width="160" height="106.67" viewBox="0 0 300 200" overflow="visible"><g style="font-family:'Barlow Condensed', Impact, 'Arial Black', sans-serif;font-weight:800"><circle cx="150" cy="100" r="94" fill="none" stroke="#F7F8F2" stroke-width="6"/><circle cx="150" cy="100" r="84" fill="none" stroke="#6FB1E0" stroke-width="2.5"/><defs><path id="m15-art-top" d="M 86 100 A 64 64 0 0 1 214 100"/><path id="m15-art-bot" d="M 72 100 A 78 78 0 0 0 228 100"/></defs><text fill="#F7F8F2" font-size="22" letter-spacing="2" text-anchor="middle"><textPath href="#m15-art-top" startOffset="50%">DINK SOCIETY</textPath></text><text fill="#6FB1E0" font-size="18" letter-spacing="2" text-anchor="middle"><textPath href="#m15-art-bot" startOffset="50%">PENSACOLA</textPath></text><circle cx="150" cy="100" r="30" fill="none" stroke="#6FB1E0" stroke-width="4.2"/><circle cx="150" cy="83.5" r="3.3" fill="#6FB1E0"/><circle cx="165" cy="94" r="3.3" fill="#6FB1E0"/><circle cx="135" cy="94" r="3.3" fill="#6FB1E0"/><circle cx="159" cy="113.5" r="3.3" fill="#6FB1E0"/><circle cx="141" cy="113.5" r="3.3" fill="#6FB1E0"/><circle cx="150" cy="101.5" r="3.3" fill="#6FB1E0"/></g></svg></svg>
+    </div>
+    <div class="card-body">
+      <p class="card-eyebrow">Pensacola Pickleball</p>
+      <h3>Pensacola Dink Society</h3>
+      <p>Dink first. Ask questions later.</p>
+      <p class="price">From $22</p>
+    </div>
+  </a>
+</div>
 
 </div></section>
 </main>
+
   <footer class="site-footer">
-    <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="">
-    <p>Pickleball shirts, performance tees and caps. Printed or embroidered after you order.</p>
-    <p><a href="mailto:hello@paddleuptees.com">hello@paddleuptees.com</a></p>
-    <p>Built with Eleventy 2. Orders go to Fulfill Engine when checkout is connected.</p>
+    <div class="wrap">
+      <div>
+        <img src="/site-paddleuptees-preview/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees">
+        <p>Pickleball shirts, performance tees and embroidered caps.<br>Printed or stitched only after you order.</p>
+        <p><a href="mailto:hello@paddleuptees.com">hello@paddleuptees.com</a></p>
+        <p class="footer-badge">Powered by Eleventy &amp; Fulfill Engine</p>
+      </div>
+      <div>
+        <nav class="footer-links">
+          <a href="/site-paddleuptees-preview/pickleball-shirts/performance/">Performance shirts</a>
+          <a href="/site-paddleuptees-preview/pickleball-shirts/cotton/">Cotton tees</a>
+          <a href="/site-paddleuptees-preview/pickleball-hats/">Hats &amp; caps</a>
+          <a href="/site-paddleuptees-preview/clubs/">Club shops</a>
+          <a href="/site-paddleuptees-preview/seasonal/">Seasonal</a>
+          <a href="/site-paddleuptees-preview/outfit-your-club/">Outfit your club</a>
+        </nav>
+      </div>
+    </div>
   </footer>
+
   <aside class="cart-drawer" hidden data-cart-drawer>
     <div class="cart-panel">
+      <button type="button" class="cart-close-btn" data-cart-close aria-label="Close cart">&#x2715;</button>
       <h2>Your cart</h2>
-      <p data-cart-empty>Nothing here yet.</p>
+      <p data-cart-empty style="color: #666; font-size: 0.9rem;">Nothing here yet — go find a design you love.</p>
       <ul data-cart-lines></ul>
-      <p class="price">Subtotal <span data-cart-subtotal>$0</span></p>
-      <p>Saved in this browser. No server required.</p>
-      <button type="button" data-cart-close>Close</button>
+      <p class="cart-subtotal">Subtotal: <span data-cart-subtotal>$0.00</span></p>
+      <p style="font-size:0.8rem;opacity:0.6;margin:0">Saved in this browser. No server required.</p>
+      <button type="button" class="cart-checkout" data-checkout>Proceed to checkout</button>
+      <p class="checkout-note" data-checkout-note hidden>Preview site: checkout connects to Fulfill Engine at launch. Your cart is saved in this browser.</p>
     </div>
   </aside>
+
+  <script src="/site-paddleuptees-preview/js/mockup.js"></script>
   <script src="/site-paddleuptees-preview/js/cart.js"></script>
+  <script src="/site-paddleuptees-preview/js/product.js"></script>
 </body>
 </html>

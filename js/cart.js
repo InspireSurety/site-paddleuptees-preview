@@ -86,3 +86,12 @@
 
   render();
 })();
+
+document.addEventListener("submit", function (event) {
+  var form = event.target.closest("[data-inquiry]");
+  if (!form) return;
+  event.preventDefault();
+  var d = new FormData(form);
+  var body = "Club: " + d.get("club") + "\nHeadcount: " + d.get("count") + "\nReply to: " + d.get("email") + "\n\n" + (d.get("notes") || "");
+  window.location.href = "mailto:hello@paddleuptees.com?subject=" + encodeURIComponent("Club order: " + d.get("club")) + "&body=" + encodeURIComponent(body);
+});

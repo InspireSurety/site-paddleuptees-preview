@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ design.name }} pickleball hat | PaddleUp Tees</title>
+  <meta name="description" content="Made-to-order pickleball shirts, performance tees and caps.">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="icon" href="/brand/paddleuptees-icon.png">
+</head>
+<body data-base="/">
+  <header class="site-header">
+    <p class="promo">Made to order · Free shipping over $75</p>
+    <div class="bar">
+      <a class="logo" href="/"><img src="/brand/paddleuptees-wordmark.png" alt="PaddleUp Tees"></a>
+      <nav>
+        <a href="/pickleball-shirts/performance/">Performance</a>
+        <a href="/pickleball-shirts/cotton/">Cotton</a>
+        <a href="/pickleball-hats/">Hats</a>
+        <a href="/clubs/">Club shops</a>
+        <a href="/outfit-your-club/">Outfit your club</a>
+      </nav>
+      <button type="button" class="cart-btn" data-cart-open>Cart <span data-cart-count>0</span></button>
+    </div>
+  </header>
+  <main><article class="section" data-product>
+  <div class="wrap product">
+    <div class="swatch" style="background: #6FB1E0; width: 100%; height: 280px;">
+      <strong>DINK SOCIETY</strong>
+    </div>
+    <div>
+      <h1>Pensacola Dink Society</h1>
+      <p>A circular badge for Pensacola players who live at the kitchen line.</p>
+      <p class="price">$24</p>
+      <fieldset>
+        <legend>Color</legend>
+        <label><input type="radio" name="color" data-color value="Black" checked> Black</label>
+        <label><input type="radio" name="color" data-color value="Black"> Black</label>
+        <label><input type="radio" name="color" data-color value="White"> White</label>
+      </fieldset>
+      <button class="btn btn-fuchsia" type="button" data-add data-slug="pensacola-dink-society" data-name="Pensacola Dink Society" data-kind="hat" data-price="2400">Add to cart</button>
+    </div>
+  </div>
+</article>
+</main>
+  <footer class="site-footer">
+    <img src="/brand/paddleuptees-wordmark.png" alt="">
+    <p>Pickleball shirts, performance tees and caps. Printed or embroidered after you order.</p>
+    <p><a href="mailto:hello@paddleuptees.com">hello@paddleuptees.com</a></p>
+    <p>Built with Eleventy 2. Orders go to Fulfill Engine when checkout is connected.</p>
+  </footer>
+  <aside class="cart-drawer" hidden data-cart-drawer>
+    <div class="cart-panel">
+      <h2>Your cart</h2>
+      <p data-cart-empty>Nothing here yet.</p>
+      <ul data-cart-lines></ul>
+      <p class="price">Subtotal <span data-cart-subtotal>$0</span></p>
+      <p>Saved in this browser. No server required.</p>
+      <button type="button" data-cart-close>Close</button>
+    </div>
+  </aside>
+  <script src="/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+  --ink: #14241c;
+  --court: #1f6b45;
+  --lime: #d4ee2a;
+  --sky: #8ec8f0;
+  --sun: #f0c14a;
+  --paper: #f7f6ef;
+  --fuchsia: #e5007e;
+  --blue: #1eb5e8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+a { color: inherit; }
+img { max-width: 100%; }
+.promo {
+  margin: 0;
+  background: linear-gradient(90deg, var(--lime), #f3b7d8);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+.bar, .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+.bar { display: flex; align-items: center; gap: 16px; min-height: 72px; }
+.logo img { height: 36px; width: auto; display: block; }
+.bar nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.bar nav a { text-decoration: none; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 10px; border-radius: 999px; }
+.bar nav a:hover { background: color-mix(in srgb, var(--fuchsia) 12%, white); color: var(--fuchsia); }
+.cart-btn { margin-left: auto; border: 1px solid #ddd; background: white; border-radius: 999px; padding: 10px 14px; font-weight: 800; cursor: pointer; }
+.cart-btn:hover { border-color: var(--fuchsia); color: var(--fuchsia); }
+.hero {
+  background:
+    radial-gradient(ellipse 70% 55% at 85% 8%, color-mix(in srgb, var(--sun) 55%, transparent), transparent 50%),
+    linear-gradient(180deg, color-mix(in srgb, var(--sky) 45%, white), var(--paper) 70%);
+  padding: 56px 0 24px;
+}
+.hero h1, .page-head h1, .section h2, .card h3, .club-card h2 {
+  font-family: "Arial Narrow", "Avenir Next Condensed", Impact, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 0.92;
+  margin: 0;
+}
+.hero h1 { font-size: clamp(3.2rem, 8vw, 6.2rem); }
+.hero h1 span { color: var(--fuchsia); }
+.lede { font-size: 1.15rem; max-width: 38rem; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.btn { display: inline-flex; align-items: center; border-radius: 999px; padding: 14px 22px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border: 0; cursor: pointer; }
+.btn-court { background: var(--court); color: white; }
+.btn-ghost { background: white; border: 2px solid color-mix(in srgb, var(--fuchsia) 45%, white); }
+.btn-fuchsia { background: var(--fuchsia); color: white; }
+.section { padding: 48px 0; }
+.eyebrow { color: var(--fuchsia); font-size: 12px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+.grid { display: grid; gap: 16px; }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.tile, .card, .club-card {
+  border-radius: 24px;
+  padding: 22px;
+  text-decoration: none;
+  display: block;
+  min-height: 180px;
+}
+.tile h3, .card h3 { font-size: 2.4rem; }
+.tile p, .card p, .club-card p { max-width: 18rem; }
+.tile-perf { background: linear-gradient(145deg, var(--lime), #8dce55); }
+.tile-cotton { background: var(--court); color: white; }
+.tile-hat { background: var(--ink); color: white; }
+.card, .club-card { background: white; border: 1px solid #e6e4da; }
+.card:hover, .club-card:hover { border-color: color-mix(in srgb, var(--fuchsia) 40%, white); }
+.price { font-weight: 800; }
+.page-head { padding: 48px 0 8px; background: linear-gradient(135deg, color-mix(in srgb, var(--fuchsia) 12%, white), var(--paper)); }
+.marquee { background: var(--court); color: var(--lime); overflow: hidden; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.marquee p { margin: 0; padding: 10px 0; }
+.site-footer { background: var(--court); color: white; padding: 40px 16px; }
+.site-footer img { height: 42px; background: white; border-radius: 8px; padding: 6px; }
+.site-footer a { color: var(--lime); }
+.cart-drawer { position: fixed; inset: 0; background: rgb(0 0 0 / 35%); }
+.cart-panel { margin-left: auto; width: min(380px, 100%); height: 100%; background: white; padding: 24px; }
+.product { display: grid; gap: 28px; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .product { grid-template-columns: 1fr 1fr; } }
+.swatch {
+  width: 180px; height: 220px; border-radius: 28px; display: grid; place-items: center; color: white;
+  font-family: "Arial Narrow", Impact, sans-serif; text-transform: uppercase; text-align: center; padding: 16px;
+}
+.swatch strong { font-size: 2rem; line-height: 0.9; }

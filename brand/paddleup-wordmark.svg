@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 72" role="img" aria-label="PaddleUpTees.com">
+  <title>PaddleUpTees.com</title>
+  <text
+    x="0"
+    y="58"
+    font-family="Arial Black, Arial Narrow, Helvetica Neue, sans-serif"
+    font-weight="900"
+    font-size="64"
+    letter-spacing="-1"
+  >
+    <tspan fill="#1EB5E8">PADDLE</tspan><tspan fill="#D4EE2A">UPTEES</tspan>
+  </text>
+  <text
+    x="418"
+    y="68"
+    font-family="Arial Black, Arial Narrow, Helvetica Neue, sans-serif"
+    font-weight="900"
+    font-size="22"
+    fill="#E5007E"
+  >
+    .COM
+  </text>
+</svg>

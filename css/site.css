@@ -634,3 +634,19 @@ input:checked + .size-chip { background: var(--ink); border-color: var(--ink); c
 .inquiry input:focus, .inquiry textarea:focus { outline: 2px solid color-mix(in srgb, var(--fuchsia) 40%, transparent); border-color: var(--fuchsia); }
 .perks { display: grid; gap: .5rem; margin: 0 0 1.5rem; font-weight: 600; }
 .perks li::before { content: ""; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: var(--fuchsia); margin-right: .625rem; }
+
+@media (max-width: 479px) {
+  .bar { gap: .5rem; }
+  .logo img { height: 32px; }
+  .icon-btn { width: 2.5rem; height: 2.5rem; }
+  .bar-end { gap: .375rem; }
+}
+
+@media (max-width: 359px) {
+  .bar { padding: 0 .5rem; gap: .375rem; }
+  .logo img { height: 26px; }
+  .icon-btn { width: 2.25rem; height: 2.25rem; }
+}
+
+.inquiry, .inquiry label { min-width: 0; }
+.inquiry input, .inquiry textarea { width: 100%; min-width: 0; }

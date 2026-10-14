@@ -32,7 +32,7 @@
     if (empty) empty.hidden = lines.length > 0;
     lines.forEach(function (line) {
       var li = document.createElement("li");
-      li.textContent = line.qty + " × " + line.name + " · " + line.kind + " · " + line.color + " / " + line.size + " · " + money(line.price * line.qty);
+      li.textContent = line.qty + " × " + line.name + " · " + line.kind + " · " + line.color + (line.size ? " / " + line.size : "") + " · " + money(line.price * line.qty);
       var remove = document.createElement("button");
       remove.type = "button";
       remove.textContent = "Remove";
@@ -71,7 +71,7 @@
     var root = addBtn.closest("[data-product]") || document;
     var kind = (root.querySelector("[data-kind]:checked") || {}).value || addBtn.dataset.kind;
     var color = (root.querySelector("[data-color]:checked") || {}).value || addBtn.dataset.color;
-    var size = (root.querySelector("[data-size]:checked") || {}).value || "M";
+    var size = kind === "hat" ? "" : ((root.querySelector("[data-size]:checked") || {}).value || "M");
     var price = Number(addBtn.dataset["price" + kind.charAt(0).toUpperCase() + kind.slice(1)] || addBtn.dataset.price);
     add({
       slug: addBtn.dataset.slug,
